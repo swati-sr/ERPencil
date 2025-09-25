@@ -1,14 +1,31 @@
-import React from "react";
 import Header from "./Header";
 import FrontLabel from "./FrontLabel";
+import { CARDS_DATA } from "../static/constant";
+import AnimatedCard from "./AnimatedCard";
 
 const Home = () => {
   return (
-    <>
-      <Header />
-      <hr className="w-[90%] h-[1px] bg-gray-600 mt-6 mx-auto" />
-      <FrontLabel />
-    </>
+    <div className="relative">
+      <div className="fixed top-0 left-0 w-full z-50">
+        <Header />
+      </div>
+
+      <div className="pt-[140px] h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+        <div className="w-full h-screen flex flex-col justify-center items-center snap-start">
+          <FrontLabel />
+        </div>
+
+        {CARDS_DATA.map((card, idx) => (
+          <div key={idx} className="snap-start">
+            <AnimatedCard
+              image={card.img}
+              text={card.text}
+              color={card.color}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
