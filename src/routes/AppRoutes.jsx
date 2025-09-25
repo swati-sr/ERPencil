@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
@@ -9,20 +10,24 @@ import Documents from "../pages/Documents";
 import ParentPortal from "../pages/ParentPortal";
 import Accounts from "../pages/Accounts";
 
+import MainLayout from "../layouts/MainLayout"; // ✅
+
 const AppRoutes = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="documents" element={<Documents />} />
-        <Route path="parent-portal" element={<ParentPortal />} />
-        <Route path="accounts" element={<Accounts />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/documents" element={<Documents />} />
+          <Route path="/parent-portal" element={<ParentPortal />} />
+          <Route path="/accounts" element={<Accounts />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 

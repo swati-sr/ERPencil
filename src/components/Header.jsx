@@ -40,7 +40,7 @@ const Header = () => {
           ))}
         </ul>
       </div>
-      <hr className="w-[90%] h-[1px] pt-6 mx-auto" />
+      {/* <hr className="w-[90%] h-[1px] pt-6 mx-auto" /> */}
     </>
   );
 };
