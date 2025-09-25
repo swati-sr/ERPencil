@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-light-bg: #abc4aa;
+}
+
+.bg-web-dark-bg {
+  background-color: var(--color-light-bg);
+}
+
+@keyframes slide-horizontal {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
