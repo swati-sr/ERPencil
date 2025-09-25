@@ -1,16 +1,22 @@
-# React + Vite
+# 🚀 React + Vite + Tailwind CSS Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built with **React** and **Vite** for fast development and uses **Tailwind CSS** for styling.  
+It comes with hot reload, linting, and a minimal setup to quickly start building modern web applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## React Compiler
+- [React](https://react.dev/) – Frontend library
+- [Vite](https://vitejs.dev/) – Next-generation frontend tooling
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
+- [ESLint](https://eslint.org/) – Linting and code quality
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📦 Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/swati-sr/ERPencil.git
+   ```
