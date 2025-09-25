@@ -10,7 +10,7 @@ const FrontLabel = () => {
         one platform for every student record
       </h4>
       <p className="text-[#675D50] font-semibold text-[1.5rem] mt-4">
-        Orbitly manages students, library activity, academics, rewards,
+        Orbitly manages student's library activity, academics, rewards,
         documents & more....
       </p>
     </div>

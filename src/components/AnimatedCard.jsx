@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Card from "./Card";
 
-const AnimatedCard = ({ image, text, color }) => {
+const AnimatedCard = ({ image, text, color, path }) => {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -26,7 +26,7 @@ const AnimatedCard = ({ image, text, color }) => {
             : "opacity-0 scale-90 translate-y-10"
         }`}
       >
-        <Card image={image} text={text} color={color} />
+        <Card image={image} text={text} color={color} path={path} />
       </div>
     </div>
   );
