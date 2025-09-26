@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-[#ABC4AA] to-[#1c291c] text-[#F3DEBA] px-6 md:px-16 py-12">
+    <div className="min-h-screen w-full text-[#675D50] font-semibold px-6 md:px-16 py-12">
       {alert.show && <Alert {...alert} />}
 
       <div className="max-w-6xl mx-auto text-center md:text-left mb-12">
@@ -36,16 +36,16 @@ const Contact = () => {
           <img src={school} alt="School" className="rounded-xl shadow-xl" />
 
           <ul className="space-y-3">
-            <li className="flex items-center gap-2 text-gray-200">
-              <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+            <li className="flex items-center gap-2 text-[#1c291c]">
+              <span className="w-2 h-2 bg-[#675D50] rounded-full"></span>
               Fast support
             </li>
-            <li className="flex items-center gap-2 text-gray-200">
-              <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+            <li className="flex items-center gap-2 text-[#1c291c]">
+              <span className="w-2 h-2 bg-[#675D50] rounded-full"></span>
               Secure data
             </li>
-            <li className="flex items-center gap-2 text-gray-200">
-              <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+            <li className="flex items-center gap-2 text-[#1c291c]">
+              <span className="w-2 h-2 bg-[#675D50] rounded-full"></span>
               Built for schools
             </li>
           </ul>

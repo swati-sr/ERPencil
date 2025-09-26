@@ -21,3 +21,18 @@ export const CARDS_DATA = [
   { img: ptm, text: "Parent Portal", color: "#333333", path: "/parent-portal" },
   { img: books, text: "Documents", color: "#1F1D36", path: "/documents" },
 ];
+
+export const FOOTER_DATA = {
+  contact: [
+    { label: "Email", value: "info@yoursite.com" },
+    { label: "Phone", value: "+91-8827258409" },
+  ],
+  socialLinks: [
+    { name: "Instagram", url: "#" },
+    { name: "Facebook", url: "#" },
+    { name: "NGO", url: "#" },
+    { name: "Social Accounts", url: "#" },
+    { name: "Telegram", url: "#" },
+  ],
+  bottomText: "Let's Connect",
+};

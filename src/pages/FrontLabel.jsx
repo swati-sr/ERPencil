@@ -2,7 +2,7 @@ import React from "react";
 
 const FrontLabel = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-[70vh] bg-light-bg overflow-hidden">
+    <div className="flex flex-col justify-center items-center h-[88vh] bg-light-bg overflow-hidden">
       <h1 className="text-[#675D50] font-extrabold text-[8rem] leading-[1.1] tracking-tight uppercase relative px-6 inline-block text-center">
         FROM ADMISSION TO GRADUATION
       </h1>

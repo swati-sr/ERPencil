@@ -4,7 +4,7 @@ const Form = ({ isLoading, handleSubmit }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-gradient-to-br from-[#1e293b]/80 to-[#0f172a]/80 backdrop-blur-md rounded-2xl shadow-2xl p-8 space-y-6"
+      className="bg-gradient-to-br from-light-bg to-[#FEFAF6] backdrop-blur-md rounded-2xl shadow-2xl p-8 space-y-6"
     >
       <div className="grid md:grid-cols-2 gap-6">
         <div>
@@ -12,7 +12,7 @@ const Form = ({ isLoading, handleSubmit }) => {
           <input
             type="text"
             placeholder="Enter your full name"
-            className="w-full p-3 rounded-lg bg-[#0f172a] border border-gray-600 focus:ring-2 focus:ring-green-400 outline-none"
+            className="w-full p-3 rounded-lg bg-[#FEFAF6] border border-[#EEEEEE] focus:ring-2 focus:ring-green-400 outline-none"
             required
           />
         </div>
@@ -21,7 +21,7 @@ const Form = ({ isLoading, handleSubmit }) => {
           <input
             type="email"
             placeholder="you@example.com"
-            className="w-full p-3 rounded-lg bg-[#0f172a] border border-gray-600 focus:ring-2 focus:ring-green-400 outline-none"
+            className="w-full p-3 rounded-lg bg-[#FEFAF6] border border-[#EEEEEE] focus:ring-2 focus:ring-green-400 outline-none"
             required
           />
         </div>
@@ -32,7 +32,7 @@ const Form = ({ isLoading, handleSubmit }) => {
           <input
             type="text"
             placeholder="Optional"
-            className="w-full p-3 rounded-lg bg-[#0f172a] border border-gray-600 focus:ring-2 focus:ring-green-400 outline-none"
+            className="w-full p-3 rounded-lg bg-[#FEFAF6] border border-[#EEEEEE] focus:ring-2 focus:ring-green-400 outline-none"
           />
           <p className="text-xs text-gray-400 mt-1">
             Include country code if outside India.
@@ -40,7 +40,7 @@ const Form = ({ isLoading, handleSubmit }) => {
         </div>
         <div>
           <label className="block text-sm mb-2">Relation</label>
-          <select className="w-full p-3 rounded-lg bg-[#0f172a] border border-gray-600 focus:ring-2 focus:ring-green-400 outline-none">
+          <select className="w-full p-3 rounded-lg bg-[#FEFAF6] border border-[#EEEEEE] focus:ring-2 focus:ring-green-400 outline-none">
             <option>Parent</option>
             <option>Guardian</option>
             <option>Other</option>
@@ -53,7 +53,7 @@ const Form = ({ isLoading, handleSubmit }) => {
           <input
             type="text"
             placeholder="Optional"
-            className="w-full p-3 rounded-lg bg-[#0f172a] border border-gray-600 focus:ring-2 focus:ring-green-400 outline-none"
+            className="w-full p-3 rounded-lg bg-[#FEFAF6] border border-[#EEEEEE] focus:ring-2 focus:ring-green-400 outline-none"
           />
         </div>
         <div>
@@ -61,13 +61,13 @@ const Form = ({ isLoading, handleSubmit }) => {
           <input
             type="text"
             placeholder="Optional"
-            className="w-full p-3 rounded-lg bg-[#0f172a] border border-gray-600 focus:ring-2 focus:ring-green-400 outline-none"
+            className="w-full p-3 rounded-lg bg-[#FEFAF6] border border-[#EEEEEE] focus:ring-2 focus:ring-green-400 outline-none"
           />
         </div>
       </div>
       <div>
         <label className="block text-sm mb-2">Subject</label>
-        <select className="w-full p-3 rounded-lg bg-[#0f172a] border border-gray-600 focus:ring-2 focus:ring-green-400 outline-none">
+        <select className="w-full p-3 rounded-lg bg-[#FEFAF6] border border-[#EEEEEE] focus:ring-2 focus:ring-green-400 outline-none">
           <option>General Inquiry</option>
           <option>Pricing</option>
           <option>Support</option>
@@ -79,7 +79,7 @@ const Form = ({ isLoading, handleSubmit }) => {
         <textarea
           rows="4"
           placeholder="Share details so we can assist quickly"
-          className="w-full p-3 rounded-lg bg-[#0f172a] border border-gray-600 focus:ring-2 focus:ring-green-400 outline-none resize-none"
+          className="w-full p-3 rounded-lg bg-[#FEFAF6] border border-[#EEEEEE] focus:ring-2 focus:ring-green-400 outline-none resize-none"
           required
         />
       </div>
