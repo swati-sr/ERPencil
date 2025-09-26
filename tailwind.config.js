@@ -25,11 +25,27 @@ export default {
           },
           "100%": { filter: "blur(0px)", transform: "scale(1)", opacity: "1" },
         },
+        textGradient: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
+        slideIn: {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
       },
       animation: {
         "slide-text-horizontal": "slide-horizontal 7s linear infinite",
         "blur-out-scale-down": "blur-out-scale-down 0.7s ease-out forwards",
         "highlight-in-scale-up": "highlight-in-scale-up 0.7s ease-out forwards",
+        gradientText: "textGradient 10s ease infinite",
+        textSlideIn: "slideIn 1.5s ease-out forwards",
       },
     },
   },

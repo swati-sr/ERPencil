@@ -28,7 +28,9 @@ const Header = () => {
           {MENU_ITEMS_RIGHT.map((item, index) => (
             <li
               key={index}
-              className="relative group cursor-pointer font-bold text-lg"
+              className={`relative group cursor-pointer font-bold text-lg ${
+                item.label === "Sign In" ? "animate-pulse text-[#102C57]" : ""
+              }`}
             >
               <Link to={item.path} className="relative z-10">
                 {item.label}
@@ -40,7 +42,7 @@ const Header = () => {
           ))}
         </ul>
       </div>
-      <hr className="w-[90%] h-[1px] pt-6 mx-auto" />
+      {/* <hr className="w-[90%] h-[1px] pt-6 mx-auto" /> */}
     </>
   );
 };
